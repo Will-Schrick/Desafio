@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap');
+
+header {
+  width: 100%;
+  font-family: 'Baloo 2', sans-serif;
+}
+
+/* Top orange bar */
+.top-bar {
+  background-color: #cc6527;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  color: white;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+
+.subscribe a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Centered logo */
+.logo-wrapper {
+  background-color: #3f4c99;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  height: 85px;
+}
+
+/* Main navigation bar */
+.main-nav {
+  background-color: #3f4c99;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 2rem;
+  flex-wrap: wrap;
+}
+
+/* Nav links */
+.nav-links {
+  display: flex;
+  gap: 1.75rem;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+  color: #cc6527;
+}
+
+/* Right: dropdown + button */
+.right-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  position: relative;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+}
+
+/* Club QHN button */
+.club-btn {
+  background-color: #cc6527;
+  color: white;
+  padding: 0.4rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.club-btn:hover {
+  background-color: #a94e1d;
+}
+
+/* NEW: Full-width dropdown section */
+.full-dropdown {
+  background-color: #2b4a87;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.city-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 200px));
+  gap: 2rem 4rem;
+  text-align: center;
+}
+
+.dropdown-city {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+/* Underline animation */
+.dropdown-city::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background-color: #cc6527;
+  transition: width 0.3s ease;
+}
+
+.dropdown-city:hover {
+  color: #cc6527;
+}
+
+.dropdown-city:hover::after {
+  width: 100%;
+}

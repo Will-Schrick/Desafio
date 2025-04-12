@@ -1,0 +1,55 @@
+.home-wrapper {
+  background: #fff;
+  color: #000;
+  padding: 2rem;
+}
+
+.main-content {
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.feature-article {
+  flex: 2;
+}
+
+.feature-article img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.feature-article h2 {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+
+.feature-article p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.related-article {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.related-article img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.related-article p {
+  font-size: 0.95rem;
+  color: #111;
+}
